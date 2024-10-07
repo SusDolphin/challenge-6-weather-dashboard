@@ -4,6 +4,7 @@ const currentWeatherEl=document.querySelector("#current-weather");
 const fiveDayEl=document.querySelector("#five-day");
 const apiKey='43307f36c133c1b4d80feb3644b2ab3e';
 
+
 function searchCity(event){
    event.preventDefault();
    const cityName=cityNameEl.value;
@@ -27,7 +28,6 @@ function populateCurrentWeather(cityName){
                             <p> Temp: <span>${data.main.temp} °F</span> </p>
                             <p> Wind: <span>12 MPH</span> </p>
                             <p> Humidity: <span>47 %</span> </p>`;
-
 
 
     console.log(data)
